@@ -1,0 +1,65 @@
+//============================================================================
+// Name        : 1v2.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+using namespace std;
+
+int main() {
+	int a, b, c;
+	float d;
+	cout << "0 - Exit"<<"\n";
+	cout << "1 - Addition"<<"\n";
+	cout << "2 - Subtraction"<<"\n";
+	cout << "3 - Multiplication"<<"\n";
+	cout << "4 - Division"<<"\n";
+	cin >> c;
+	switch(c){
+	case 1 : {
+		cout << "Enter 1st number: "<<"\n";
+		cin>>a;
+		cout << "Enter 2nd number: "<<"\n";
+		cin>>b;
+		d = a + b;
+		cout << d;
+
+	}
+	case 2 : {
+		cout << "Enter 1st numbers: "<<"\n";
+		cin>>a;
+		cout << "Enter 2nd number: "<<"\n";
+		cin>>b;
+		d = a - b;
+		cout << d;
+	}
+	case 3 : {
+		cout << "Enter 1st numbers: "<<"\n";
+		cin>>a;
+		cout << "Enter 2nd number: "<<"\n";
+		cin>>b;
+		d = a * b;
+		cout << d;
+
+	}
+	case 4 : {
+		cout << "Enter 1st number: "<<"\n";
+		cin>>a;
+		cout << "Enter 2nd number: "<<"\n";
+		cin>>b;
+		if(a==0)
+			cout << "Wrong";
+		else if(b==0)
+			cout << "Wrong";
+		else{
+			d = a / b;
+		}
+		cout << d;
+	}
+	default : cout << "Wrong";
+	}
+	return 0;
+}

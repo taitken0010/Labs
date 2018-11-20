@@ -1,0 +1,51 @@
+//============================================================================
+// Name        : 2.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+#include <iostream>
+using namespace std;
+int main(void) {
+unsigned short int val;
+bool ispalindrome = false;
+int bitx=0, bity=0, v=0, a=0, i=0, j=0, bit1=0, bit2=0;
+cout << "value = ";
+cin >> val;
+v = val;
+
+do{
+	a++;
+	v = v / 2;
+do{
+	if (v % 2 == 0){
+		bitx++;
+	}
+	if (v % 2 == 1){
+		bit1++;
+	}
+	i++;
+}
+while(i<= (a/2));
+do{
+	if ( v % 2 == 0){
+		bity++;
+	}
+	if (v % 2 == 1){
+		bit2++;
+	}
+	j++;
+}
+while (j < -(a/2) && i> (a/2));
+if (bitx==bity && bit1==bit2 && a % 2 ==0){
+	ispalindrome = true;
+}
+}while(v / 2 >=1);
+
+if(ispalindrome)
+	cout << val << " is a bitwise palindrome" << endl;
+else
+	cout << val << " is not a bitwise palindrome" << endl;
+return 0;
+}

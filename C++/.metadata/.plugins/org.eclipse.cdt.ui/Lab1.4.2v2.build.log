@@ -1,0 +1,16 @@
+12:40:41 **** Incremental Build of configuration Debug for project Lab1.4.2v2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Lab1.4.2v2.o" "..\\src\\Lab1.4.2v2.cpp" 
+..\src\Lab1.4.2v2.cpp: In function 'int main()':
+..\src\Lab1.4.2v2.cpp:23:10: error: lvalue required as left operand of assignment
+  i / j = k;
+          ^
+..\src\Lab1.4.2v2.cpp:26:10: error: lvalue required as left operand of assignment
+  k % i = j;
+          ^
+..\src\Lab1.4.2v2.cpp:29:14: error: lvalue required as left operand of assignment
+  k * k * k = k;
+              ^
+
+12:40:42 Build Failed. 3 errors, 0 warnings. (took 491ms)
+
